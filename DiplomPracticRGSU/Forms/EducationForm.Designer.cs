@@ -39,12 +39,14 @@
             System.Windows.Forms.Label contractLabel;
             System.Windows.Forms.Label costOfTraineesLabel;
             System.Windows.Forms.Label contractTimeLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EducationForm));
             this.technoparkPracticDataSet1 = new DiplomPracticRGSU.TechnoparkPracticDataSet1();
             this.educationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.educationInstitutionTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.EducationInstitutionTableAdapter();
             this.tableAdapterManager = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TableAdapterManager();
             this.typeOfEducationInstitutionTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TypeOfEducationInstitutionTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.phoneContactMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.typeEducationIDComboBox = new System.Windows.Forms.ComboBox();
             this.typeOfEducationInstitutionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.educationalIDTextBox = new System.Windows.Forms.TextBox();
@@ -70,7 +72,6 @@
             this.fKTraineeEducationInstitutionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.technoparkPracticDataSet = new DiplomPracticRGSU.TechnoparkPracticDataSet1();
             this.typeOfEducationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.phoneContactMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.masterClassBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.masterClassTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.MasterClassTableAdapter();
             this.educationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -269,6 +270,15 @@
             this.panel1.Size = new System.Drawing.Size(583, 287);
             this.panel1.TabIndex = 2;
             // 
+            // phoneContactMaskedTextBox
+            // 
+            this.phoneContactMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "PhoneContact", true));
+            this.phoneContactMaskedTextBox.Location = new System.Drawing.Point(308, 171);
+            this.phoneContactMaskedTextBox.Mask = "+7(000)000-0000";
+            this.phoneContactMaskedTextBox.Name = "phoneContactMaskedTextBox";
+            this.phoneContactMaskedTextBox.Size = new System.Drawing.Size(196, 20);
+            this.phoneContactMaskedTextBox.TabIndex = 21;
+            // 
             // typeEducationIDComboBox
             // 
             this.typeEducationIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "TypeEducationID", true));
@@ -378,46 +388,50 @@
             // 
             // saveButton
             // 
+            this.saveButton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.saveButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.saveButton.Location = new System.Drawing.Point(22, 149);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(162, 41);
             this.saveButton.TabIndex = 6;
             this.saveButton.Text = "Сохранить";
-            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click_1);
             // 
             // changeButton
             // 
+            this.changeButton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.changeButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.changeButton.Location = new System.Drawing.Point(22, 102);
             this.changeButton.Name = "changeButton";
             this.changeButton.Size = new System.Drawing.Size(162, 41);
             this.changeButton.TabIndex = 5;
             this.changeButton.Text = "Изменить";
-            this.changeButton.UseVisualStyleBackColor = true;
+            this.changeButton.UseVisualStyleBackColor = false;
             this.changeButton.Click += new System.EventHandler(this.changeButton_Click_1);
             // 
             // delitButton
             // 
+            this.delitButton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.delitButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delitButton.Location = new System.Drawing.Point(22, 55);
             this.delitButton.Name = "delitButton";
             this.delitButton.Size = new System.Drawing.Size(162, 41);
             this.delitButton.TabIndex = 4;
             this.delitButton.Text = "Удалить";
-            this.delitButton.UseVisualStyleBackColor = true;
+            this.delitButton.UseVisualStyleBackColor = false;
             this.delitButton.Click += new System.EventHandler(this.delitButton_Click_1);
             // 
             // newButtton
             // 
+            this.newButtton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.newButtton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.newButtton.Location = new System.Drawing.Point(22, 8);
             this.newButtton.Name = "newButtton";
             this.newButtton.Size = new System.Drawing.Size(162, 41);
             this.newButtton.TabIndex = 3;
             this.newButtton.Text = "Новая запись";
-            this.newButtton.UseVisualStyleBackColor = true;
+            this.newButtton.UseVisualStyleBackColor = false;
             this.newButtton.Click += new System.EventHandler(this.newButtton_Click_1);
             // 
             // fKEducationInstitutionTypeOfEducationInstitutionBindingSource
@@ -458,15 +472,6 @@
             // 
             this.typeOfEducationInstitutionBindingSource1.DataMember = "TypeOfEducationInstitution";
             this.typeOfEducationInstitutionBindingSource1.DataSource = this.technoparkPracticDataSet;
-            // 
-            // phoneContactMaskedTextBox
-            // 
-            this.phoneContactMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "PhoneContact", true));
-            this.phoneContactMaskedTextBox.Location = new System.Drawing.Point(308, 171);
-            this.phoneContactMaskedTextBox.Mask = "+7(000)000-0000";
-            this.phoneContactMaskedTextBox.Name = "phoneContactMaskedTextBox";
-            this.phoneContactMaskedTextBox.Size = new System.Drawing.Size(196, 20);
-            this.phoneContactMaskedTextBox.TabIndex = 21;
             // 
             // masterClassBindingSource
             // 
@@ -572,8 +577,8 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EducationForm";
-            this.Text = "EducationForm";
             this.Load += new System.EventHandler(this.EducationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).EndInit();

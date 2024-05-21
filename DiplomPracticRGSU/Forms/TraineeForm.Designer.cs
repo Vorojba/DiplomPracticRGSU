@@ -38,6 +38,7 @@
             System.Windows.Forms.Label endDateLabel;
             System.Windows.Forms.Label educationalIDLabel;
             System.Windows.Forms.Label phoneLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TraineeForm));
             this.technoparkPracticDataSet1 = new DiplomPracticRGSU.TechnoparkPracticDataSet1();
             this.traineeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.traineeTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TraineeTableAdapter();
@@ -53,6 +54,11 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.educationalIDComboBox = new System.Windows.Forms.ComboBox();
+            this.educationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.labIDComboBox = new System.Windows.Forms.ComboBox();
+            this.laboratoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.traineeIDTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
@@ -65,12 +71,7 @@
             this.changeButton = new System.Windows.Forms.Button();
             this.delitButton = new System.Windows.Forms.Button();
             this.newButtton = new System.Windows.Forms.Button();
-            this.phoneMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.labIDComboBox = new System.Windows.Forms.ComboBox();
-            this.educationalIDComboBox = new System.Windows.Forms.ComboBox();
-            this.laboratoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.laboratoryTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.LaboratoryTableAdapter();
-            this.educationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.educationInstitutionTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.EducationInstitutionTableAdapter();
             traineeIDLabel = new System.Windows.Forms.Label();
             lastNameLabel = new System.Windows.Forms.Label();
@@ -85,9 +86,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.traineeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.traineeDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.laboratoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laboratoryBindingSource)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // traineeIDLabel
@@ -305,6 +306,49 @@
             this.panel1.Size = new System.Drawing.Size(493, 270);
             this.panel1.TabIndex = 2;
             // 
+            // educationalIDComboBox
+            // 
+            this.educationalIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.traineeBindingSource, "EducationalID", true));
+            this.educationalIDComboBox.DataSource = this.educationInstitutionBindingSource;
+            this.educationalIDComboBox.DisplayMember = "Name";
+            this.educationalIDComboBox.FormattingEnabled = true;
+            this.educationalIDComboBox.Location = new System.Drawing.Point(276, 205);
+            this.educationalIDComboBox.Name = "educationalIDComboBox";
+            this.educationalIDComboBox.Size = new System.Drawing.Size(200, 21);
+            this.educationalIDComboBox.TabIndex = 21;
+            this.educationalIDComboBox.ValueMember = "EducationalID";
+            // 
+            // educationInstitutionBindingSource
+            // 
+            this.educationInstitutionBindingSource.DataMember = "EducationInstitution";
+            this.educationInstitutionBindingSource.DataSource = this.technoparkPracticDataSet1;
+            // 
+            // labIDComboBox
+            // 
+            this.labIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.traineeBindingSource, "LabID", true));
+            this.labIDComboBox.DataSource = this.laboratoryBindingSource;
+            this.labIDComboBox.DisplayMember = "Name";
+            this.labIDComboBox.FormattingEnabled = true;
+            this.labIDComboBox.Location = new System.Drawing.Point(276, 128);
+            this.labIDComboBox.Name = "labIDComboBox";
+            this.labIDComboBox.Size = new System.Drawing.Size(200, 21);
+            this.labIDComboBox.TabIndex = 20;
+            this.labIDComboBox.ValueMember = "LabID";
+            // 
+            // laboratoryBindingSource
+            // 
+            this.laboratoryBindingSource.DataMember = "Laboratory";
+            this.laboratoryBindingSource.DataSource = this.technoparkPracticDataSet1;
+            // 
+            // phoneMaskedTextBox
+            // 
+            this.phoneMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.traineeBindingSource, "Phone", true));
+            this.phoneMaskedTextBox.Location = new System.Drawing.Point(276, 230);
+            this.phoneMaskedTextBox.Mask = "+7(000)000-0000";
+            this.phoneMaskedTextBox.Name = "phoneMaskedTextBox";
+            this.phoneMaskedTextBox.Size = new System.Drawing.Size(200, 20);
+            this.phoneMaskedTextBox.TabIndex = 19;
+            // 
             // traineeIDTextBox
             // 
             this.traineeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.traineeBindingSource, "TraineeID", true));
@@ -376,94 +420,55 @@
             // 
             // saveButton
             // 
+            this.saveButton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.saveButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.saveButton.Location = new System.Drawing.Point(22, 149);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(162, 41);
             this.saveButton.TabIndex = 6;
             this.saveButton.Text = "Сохранить";
-            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // changeButton
             // 
+            this.changeButton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.changeButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.changeButton.Location = new System.Drawing.Point(22, 102);
             this.changeButton.Name = "changeButton";
             this.changeButton.Size = new System.Drawing.Size(162, 41);
             this.changeButton.TabIndex = 5;
             this.changeButton.Text = "Изменить";
-            this.changeButton.UseVisualStyleBackColor = true;
+            this.changeButton.UseVisualStyleBackColor = false;
             this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
             // 
             // delitButton
             // 
+            this.delitButton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.delitButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delitButton.Location = new System.Drawing.Point(22, 55);
             this.delitButton.Name = "delitButton";
             this.delitButton.Size = new System.Drawing.Size(162, 41);
             this.delitButton.TabIndex = 4;
             this.delitButton.Text = "Удалить";
-            this.delitButton.UseVisualStyleBackColor = true;
+            this.delitButton.UseVisualStyleBackColor = false;
             this.delitButton.Click += new System.EventHandler(this.delitButton_Click);
             // 
             // newButtton
             // 
+            this.newButtton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.newButtton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.newButtton.Location = new System.Drawing.Point(22, 8);
             this.newButtton.Name = "newButtton";
             this.newButtton.Size = new System.Drawing.Size(162, 41);
             this.newButtton.TabIndex = 3;
             this.newButtton.Text = "Новая запись";
-            this.newButtton.UseVisualStyleBackColor = true;
+            this.newButtton.UseVisualStyleBackColor = false;
             this.newButtton.Click += new System.EventHandler(this.newButtton_Click);
-            // 
-            // phoneMaskedTextBox
-            // 
-            this.phoneMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.traineeBindingSource, "Phone", true));
-            this.phoneMaskedTextBox.Location = new System.Drawing.Point(276, 230);
-            this.phoneMaskedTextBox.Mask = "+7(000)000-0000";
-            this.phoneMaskedTextBox.Name = "phoneMaskedTextBox";
-            this.phoneMaskedTextBox.Size = new System.Drawing.Size(200, 20);
-            this.phoneMaskedTextBox.TabIndex = 19;
-            // 
-            // labIDComboBox
-            // 
-            this.labIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.traineeBindingSource, "LabID", true));
-            this.labIDComboBox.DataSource = this.laboratoryBindingSource;
-            this.labIDComboBox.DisplayMember = "Name";
-            this.labIDComboBox.FormattingEnabled = true;
-            this.labIDComboBox.Location = new System.Drawing.Point(276, 128);
-            this.labIDComboBox.Name = "labIDComboBox";
-            this.labIDComboBox.Size = new System.Drawing.Size(200, 21);
-            this.labIDComboBox.TabIndex = 20;
-            this.labIDComboBox.ValueMember = "LabID";
-            // 
-            // educationalIDComboBox
-            // 
-            this.educationalIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.traineeBindingSource, "EducationalID", true));
-            this.educationalIDComboBox.DataSource = this.educationInstitutionBindingSource;
-            this.educationalIDComboBox.DisplayMember = "Name";
-            this.educationalIDComboBox.FormattingEnabled = true;
-            this.educationalIDComboBox.Location = new System.Drawing.Point(276, 205);
-            this.educationalIDComboBox.Name = "educationalIDComboBox";
-            this.educationalIDComboBox.Size = new System.Drawing.Size(200, 21);
-            this.educationalIDComboBox.TabIndex = 21;
-            this.educationalIDComboBox.ValueMember = "EducationalID";
-            // 
-            // laboratoryBindingSource
-            // 
-            this.laboratoryBindingSource.DataMember = "Laboratory";
-            this.laboratoryBindingSource.DataSource = this.technoparkPracticDataSet1;
             // 
             // laboratoryTableAdapter
             // 
             this.laboratoryTableAdapter.ClearBeforeFill = true;
-            // 
-            // educationInstitutionBindingSource
-            // 
-            this.educationInstitutionBindingSource.DataMember = "EducationInstitution";
-            this.educationInstitutionBindingSource.DataSource = this.technoparkPracticDataSet1;
             // 
             // educationInstitutionTableAdapter
             // 
@@ -479,17 +484,17 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.traineeDataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TraineeForm";
-            this.Text = "TraineeForm";
             this.Load += new System.EventHandler(this.TraineeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.traineeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.traineeDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.laboratoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laboratoryBindingSource)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
