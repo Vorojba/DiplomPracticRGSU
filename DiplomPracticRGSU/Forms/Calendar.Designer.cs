@@ -173,6 +173,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calendar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Calendar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnNext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrev)).EndInit();

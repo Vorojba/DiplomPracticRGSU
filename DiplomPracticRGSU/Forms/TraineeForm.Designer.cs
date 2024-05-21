@@ -94,92 +94,92 @@
             // traineeIDLabel
             // 
             traineeIDLabel.AutoSize = true;
-            traineeIDLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            traineeIDLabel.Location = new System.Drawing.Point(180, 18);
+            traineeIDLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            traineeIDLabel.Location = new System.Drawing.Point(233, 19);
             traineeIDLabel.Name = "traineeIDLabel";
-            traineeIDLabel.Size = new System.Drawing.Size(90, 18);
+            traineeIDLabel.Size = new System.Drawing.Size(37, 23);
             traineeIDLabel.TabIndex = 0;
-            traineeIDLabel.Text = "Trainee ID:";
+            traineeIDLabel.Text = "ID:";
             // 
             // lastNameLabel
             // 
             lastNameLabel.AutoSize = true;
-            lastNameLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            lastNameLabel.Location = new System.Drawing.Point(180, 47);
+            lastNameLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            lastNameLabel.Location = new System.Drawing.Point(169, 45);
             lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new System.Drawing.Size(90, 18);
+            lastNameLabel.Size = new System.Drawing.Size(101, 23);
             lastNameLabel.TabIndex = 2;
-            lastNameLabel.Text = "Last Name:";
+            lastNameLabel.Text = "Фамилия:";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            nameLabel.Location = new System.Drawing.Point(215, 75);
+            nameLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            nameLabel.Location = new System.Drawing.Point(214, 73);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(55, 18);
+            nameLabel.Size = new System.Drawing.Size(56, 23);
             nameLabel.TabIndex = 4;
-            nameLabel.Text = "Name:";
+            nameLabel.Text = "Имя:";
             // 
             // patronymicLabel
             // 
             patronymicLabel.AutoSize = true;
-            patronymicLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            patronymicLabel.Location = new System.Drawing.Point(175, 101);
+            patronymicLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            patronymicLabel.Location = new System.Drawing.Point(173, 96);
             patronymicLabel.Name = "patronymicLabel";
-            patronymicLabel.Size = new System.Drawing.Size(95, 18);
+            patronymicLabel.Size = new System.Drawing.Size(97, 23);
             patronymicLabel.TabIndex = 6;
-            patronymicLabel.Text = "Patronymic:";
+            patronymicLabel.Text = "Отчество:";
             // 
             // labIDLabel
             // 
             labIDLabel.AutoSize = true;
-            labIDLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            labIDLabel.Location = new System.Drawing.Point(208, 127);
+            labIDLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            labIDLabel.Location = new System.Drawing.Point(137, 126);
             labIDLabel.Name = "labIDLabel";
-            labIDLabel.Size = new System.Drawing.Size(62, 18);
+            labIDLabel.Size = new System.Drawing.Size(133, 23);
             labIDLabel.TabIndex = 8;
-            labIDLabel.Text = "Lab ID:";
+            labIDLabel.Text = "Лаборатория:";
             // 
             // startDateLabel
             // 
             startDateLabel.AutoSize = true;
-            startDateLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            startDateLabel.Location = new System.Drawing.Point(184, 151);
+            startDateLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            startDateLabel.Location = new System.Drawing.Point(97, 151);
             startDateLabel.Name = "startDateLabel";
-            startDateLabel.Size = new System.Drawing.Size(86, 18);
+            startDateLabel.Size = new System.Drawing.Size(173, 23);
             startDateLabel.TabIndex = 10;
-            startDateLabel.Text = "Start Date:";
+            startDateLabel.Text = "Начало праткики:";
             // 
             // endDateLabel
             // 
             endDateLabel.AutoSize = true;
-            endDateLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            endDateLabel.Location = new System.Drawing.Point(192, 179);
+            endDateLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            endDateLabel.Location = new System.Drawing.Point(64, 175);
             endDateLabel.Name = "endDateLabel";
-            endDateLabel.Size = new System.Drawing.Size(78, 18);
+            endDateLabel.Size = new System.Drawing.Size(206, 23);
             endDateLabel.TabIndex = 12;
-            endDateLabel.Text = "End Date:";
+            endDateLabel.Text = "Окончание праткики:";
             // 
             // educationalIDLabel
             // 
             educationalIDLabel.AutoSize = true;
-            educationalIDLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            educationalIDLabel.Location = new System.Drawing.Point(153, 204);
+            educationalIDLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            educationalIDLabel.Location = new System.Drawing.Point(141, 203);
             educationalIDLabel.Name = "educationalIDLabel";
-            educationalIDLabel.Size = new System.Drawing.Size(117, 18);
+            educationalIDLabel.Size = new System.Drawing.Size(129, 23);
             educationalIDLabel.TabIndex = 14;
-            educationalIDLabel.Text = "Educational ID:";
+            educationalIDLabel.Text = "Место учебы:";
             // 
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            phoneLabel.Location = new System.Drawing.Point(208, 230);
+            phoneLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            phoneLabel.Location = new System.Drawing.Point(177, 227);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(57, 18);
+            phoneLabel.Size = new System.Drawing.Size(93, 23);
             phoneLabel.TabIndex = 16;
-            phoneLabel.Text = "Phone:";
+            phoneLabel.Text = "Телефон:";
             // 
             // technoparkPracticDataSet1
             // 
@@ -486,6 +486,7 @@
             this.Controls.Add(this.traineeDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TraineeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.TraineeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.traineeBindingSource)).EndInit();

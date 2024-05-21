@@ -117,102 +117,102 @@
             // educationalIDLabel
             // 
             educationalIDLabel.AutoSize = true;
-            educationalIDLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            educationalIDLabel.Location = new System.Drawing.Point(176, 19);
+            educationalIDLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            educationalIDLabel.Location = new System.Drawing.Point(270, 17);
             educationalIDLabel.Name = "educationalIDLabel";
-            educationalIDLabel.Size = new System.Drawing.Size(117, 18);
+            educationalIDLabel.Size = new System.Drawing.Size(37, 23);
             educationalIDLabel.TabIndex = 0;
-            educationalIDLabel.Text = "Educational ID:";
+            educationalIDLabel.Text = "ID:";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            nameLabel.Location = new System.Drawing.Point(238, 45);
+            nameLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            nameLabel.Location = new System.Drawing.Point(204, 42);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(55, 18);
+            nameLabel.Size = new System.Drawing.Size(103, 23);
             nameLabel.TabIndex = 2;
-            nameLabel.Text = "Name:";
+            nameLabel.Text = "Название:";
             // 
             // typeEducationIDLabel
             // 
             typeEducationIDLabel.AutoSize = true;
-            typeEducationIDLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            typeEducationIDLabel.Location = new System.Drawing.Point(147, 70);
+            typeEducationIDLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            typeEducationIDLabel.Location = new System.Drawing.Point(84, 66);
             typeEducationIDLabel.Name = "typeEducationIDLabel";
-            typeEducationIDLabel.Size = new System.Drawing.Size(146, 18);
+            typeEducationIDLabel.Size = new System.Drawing.Size(223, 23);
             typeEducationIDLabel.TabIndex = 4;
-            typeEducationIDLabel.Text = "Type Education ID:";
+            typeEducationIDLabel.Text = "Тип учебного завдения:";
             // 
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            addressLabel.Location = new System.Drawing.Point(222, 97);
+            addressLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            addressLabel.Location = new System.Drawing.Point(238, 95);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(71, 18);
+            addressLabel.Size = new System.Drawing.Size(69, 23);
             addressLabel.TabIndex = 6;
-            addressLabel.Text = "Address:";
+            addressLabel.Text = "Адрес:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            emailLabel.Location = new System.Drawing.Point(238, 124);
+            emailLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            emailLabel.Location = new System.Drawing.Point(206, 118);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(53, 18);
+            emailLabel.Size = new System.Drawing.Size(101, 23);
             emailLabel.TabIndex = 8;
-            emailLabel.Text = "Email:";
+            emailLabel.Text = "Эл. почта:";
             // 
             // contactPersonLabel
             // 
             contactPersonLabel.AutoSize = true;
-            contactPersonLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            contactPersonLabel.Location = new System.Drawing.Point(171, 146);
+            contactPersonLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            contactPersonLabel.Location = new System.Drawing.Point(147, 144);
             contactPersonLabel.Name = "contactPersonLabel";
-            contactPersonLabel.Size = new System.Drawing.Size(120, 18);
+            contactPersonLabel.Size = new System.Drawing.Size(160, 23);
             contactPersonLabel.TabIndex = 10;
-            contactPersonLabel.Text = "Contact Person:";
+            contactPersonLabel.Text = "Контакное лицо:";
             // 
             // phoneContactLabel
             // 
             phoneContactLabel.AutoSize = true;
-            phoneContactLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            phoneContactLabel.Location = new System.Drawing.Point(176, 171);
+            phoneContactLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            phoneContactLabel.Location = new System.Drawing.Point(214, 168);
             phoneContactLabel.Name = "phoneContactLabel";
-            phoneContactLabel.Size = new System.Drawing.Size(115, 18);
+            phoneContactLabel.Size = new System.Drawing.Size(93, 23);
             phoneContactLabel.TabIndex = 12;
-            phoneContactLabel.Text = "Phone Contact:";
+            phoneContactLabel.Text = "Телефон:";
             // 
             // contractLabel
             // 
             contractLabel.AutoSize = true;
-            contractLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            contractLabel.Location = new System.Drawing.Point(217, 195);
+            contractLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            contractLabel.Location = new System.Drawing.Point(218, 190);
             contractLabel.Name = "contractLabel";
-            contractLabel.Size = new System.Drawing.Size(74, 18);
+            contractLabel.Size = new System.Drawing.Size(89, 23);
             contractLabel.TabIndex = 14;
-            contractLabel.Text = "Contract:";
+            contractLabel.Text = "Договор:";
             // 
             // costOfTraineesLabel
             // 
             costOfTraineesLabel.AutoSize = true;
-            costOfTraineesLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            costOfTraineesLabel.Location = new System.Drawing.Point(160, 220);
+            costOfTraineesLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            costOfTraineesLabel.Location = new System.Drawing.Point(68, 218);
             costOfTraineesLabel.Name = "costOfTraineesLabel";
-            costOfTraineesLabel.Size = new System.Drawing.Size(131, 18);
+            costOfTraineesLabel.Size = new System.Drawing.Size(239, 23);
             costOfTraineesLabel.TabIndex = 16;
-            costOfTraineesLabel.Text = "Cost Of Trainees:";
+            costOfTraineesLabel.Text = "Количество прктикантов:";
             // 
             // contractTimeLabel
             // 
             contractTimeLabel.AutoSize = true;
-            contractTimeLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            contractTimeLabel.Location = new System.Drawing.Point(176, 247);
+            contractTimeLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            contractTimeLabel.Location = new System.Drawing.Point(152, 247);
             contractTimeLabel.Name = "contractTimeLabel";
-            contractTimeLabel.Size = new System.Drawing.Size(115, 18);
+            contractTimeLabel.Size = new System.Drawing.Size(155, 23);
             contractTimeLabel.TabIndex = 18;
-            contractTimeLabel.Text = "Contract Time:";
+            contractTimeLabel.Text = "Дата контракта:";
             // 
             // technoparkPracticDataSet1
             // 
@@ -355,7 +355,7 @@
             // contractTimeTextBox
             // 
             this.contractTimeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "ContractTime", true));
-            this.contractTimeTextBox.Location = new System.Drawing.Point(308, 247);
+            this.contractTimeTextBox.Location = new System.Drawing.Point(308, 252);
             this.contractTimeTextBox.Name = "contractTimeTextBox";
             this.contractTimeTextBox.Size = new System.Drawing.Size(196, 20);
             this.contractTimeTextBox.TabIndex = 19;
@@ -579,6 +579,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EducationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.EducationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).EndInit();
