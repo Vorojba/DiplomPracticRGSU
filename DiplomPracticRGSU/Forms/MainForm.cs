@@ -36,5 +36,11 @@ namespace DiplomPracticRGSU
             TraineeForm traineeForm = new TraineeForm();
             traineeForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Calendar calendar = new Calendar();
+            calendar.Show();
+        }
     }
 }

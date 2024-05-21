@@ -44,17 +44,6 @@
             this.educationInstitutionTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.EducationInstitutionTableAdapter();
             this.tableAdapterManager = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TableAdapterManager();
             this.typeOfEducationInstitutionTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TypeOfEducationInstitutionTableAdapter();
-            this.educationInstitutionDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.typeEducationIDComboBox = new System.Windows.Forms.ComboBox();
             this.typeOfEducationInstitutionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -63,7 +52,6 @@
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.contactPersonTextBox = new System.Windows.Forms.TextBox();
-            this.phoneContactTextBox = new System.Windows.Forms.TextBox();
             this.contractTextBox = new System.Windows.Forms.TextBox();
             this.costOfTraineesTextBox = new System.Windows.Forms.TextBox();
             this.contractTimeTextBox = new System.Windows.Forms.TextBox();
@@ -80,8 +68,23 @@
             this.fKTraineeEducationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fKTraineeEducationInstitutionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.technoparkPracticDataSet = new DiplomPracticRGSU.TechnoparkPracticDataSet();
+            this.technoparkPracticDataSet = new DiplomPracticRGSU.TechnoparkPracticDataSet1();
             this.typeOfEducationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneContactMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.masterClassBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.masterClassTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.MasterClassTableAdapter();
+            this.educationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.educationInstitutionDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             educationalIDLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             typeEducationIDLabel = new System.Windows.Forms.Label();
@@ -94,7 +97,6 @@
             contractTimeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource)).BeginInit();
@@ -106,6 +108,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masterClassBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // educationalIDLabel
@@ -237,90 +242,9 @@
             // 
             this.typeOfEducationInstitutionTableAdapter.ClearBeforeFill = true;
             // 
-            // educationInstitutionDataGridView
-            // 
-            this.educationInstitutionDataGridView.AutoGenerateColumns = false;
-            this.educationInstitutionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.educationInstitutionDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.educationInstitutionDataGridView.DataSource = this.educationInstitutionBindingSource;
-            this.educationInstitutionDataGridView.Location = new System.Drawing.Point(12, 12);
-            this.educationInstitutionDataGridView.Name = "educationInstitutionDataGridView";
-            this.educationInstitutionDataGridView.Size = new System.Drawing.Size(878, 288);
-            this.educationInstitutionDataGridView.TabIndex = 1;
-            this.educationInstitutionDataGridView.DoubleClick += new System.EventHandler(this.educationInstitutionDataGridView_DoubleClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "EducationalID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "EducationalID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "TypeEducationID";
-            this.dataGridViewTextBoxColumn3.HeaderText = "TypeEducationID";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ContactPerson";
-            this.dataGridViewTextBoxColumn6.HeaderText = "ContactPerson";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "PhoneContact";
-            this.dataGridViewTextBoxColumn7.HeaderText = "PhoneContact";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Contract";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Contract";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "CostOfTrainees";
-            this.dataGridViewTextBoxColumn9.HeaderText = "CostOfTrainees";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "ContractTime";
-            this.dataGridViewTextBoxColumn10.HeaderText = "ContractTime";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.phoneContactMaskedTextBox);
             this.panel1.Controls.Add(this.typeEducationIDComboBox);
             this.panel1.Controls.Add(educationalIDLabel);
             this.panel1.Controls.Add(this.educationalIDTextBox);
@@ -334,7 +258,6 @@
             this.panel1.Controls.Add(contactPersonLabel);
             this.panel1.Controls.Add(this.contactPersonTextBox);
             this.panel1.Controls.Add(phoneContactLabel);
-            this.panel1.Controls.Add(this.phoneContactTextBox);
             this.panel1.Controls.Add(contractLabel);
             this.panel1.Controls.Add(this.contractTextBox);
             this.panel1.Controls.Add(costOfTraineesLabel);
@@ -402,14 +325,6 @@
             this.contactPersonTextBox.Name = "contactPersonTextBox";
             this.contactPersonTextBox.Size = new System.Drawing.Size(196, 20);
             this.contactPersonTextBox.TabIndex = 11;
-            // 
-            // phoneContactTextBox
-            // 
-            this.phoneContactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "PhoneContact", true));
-            this.phoneContactTextBox.Location = new System.Drawing.Point(308, 172);
-            this.phoneContactTextBox.Name = "phoneContactTextBox";
-            this.phoneContactTextBox.Size = new System.Drawing.Size(196, 20);
-            this.phoneContactTextBox.TabIndex = 13;
             // 
             // contractTextBox
             // 
@@ -544,21 +459,124 @@
             this.typeOfEducationInstitutionBindingSource1.DataMember = "TypeOfEducationInstitution";
             this.typeOfEducationInstitutionBindingSource1.DataSource = this.technoparkPracticDataSet;
             // 
+            // phoneContactMaskedTextBox
+            // 
+            this.phoneContactMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "PhoneContact", true));
+            this.phoneContactMaskedTextBox.Location = new System.Drawing.Point(308, 171);
+            this.phoneContactMaskedTextBox.Mask = "+7(000)000-0000";
+            this.phoneContactMaskedTextBox.Name = "phoneContactMaskedTextBox";
+            this.phoneContactMaskedTextBox.Size = new System.Drawing.Size(196, 20);
+            this.phoneContactMaskedTextBox.TabIndex = 21;
+            // 
+            // masterClassBindingSource
+            // 
+            this.masterClassBindingSource.DataMember = "MasterClass";
+            this.masterClassBindingSource.DataSource = this.technoparkPracticDataSet1;
+            // 
+            // masterClassTableAdapter
+            // 
+            this.masterClassTableAdapter.ClearBeforeFill = true;
+            // 
+            // educationInstitutionBindingSource1
+            // 
+            this.educationInstitutionBindingSource1.DataMember = "EducationInstitution";
+            this.educationInstitutionBindingSource1.DataSource = this.technoparkPracticDataSet1;
+            // 
+            // educationInstitutionDataGridView
+            // 
+            this.educationInstitutionDataGridView.AutoGenerateColumns = false;
+            this.educationInstitutionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.educationInstitutionDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.educationInstitutionDataGridView.DataSource = this.educationInstitutionBindingSource;
+            this.educationInstitutionDataGridView.Location = new System.Drawing.Point(20, 12);
+            this.educationInstitutionDataGridView.Name = "educationInstitutionDataGridView";
+            this.educationInstitutionDataGridView.Size = new System.Drawing.Size(870, 291);
+            this.educationInstitutionDataGridView.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "EducationalID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "EducationalID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "TypeEducationID";
+            this.dataGridViewTextBoxColumn3.HeaderText = "TypeEducationID";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ContactPerson";
+            this.dataGridViewTextBoxColumn6.HeaderText = "ContactPerson";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "PhoneContact";
+            this.dataGridViewTextBoxColumn7.HeaderText = "PhoneContact";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Contract";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Contract";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "CostOfTrainees";
+            this.dataGridViewTextBoxColumn9.HeaderText = "CostOfTrainees";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "ContractTime";
+            this.dataGridViewTextBoxColumn10.HeaderText = "ContractTime";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
             // EducationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 608);
+            this.ClientSize = new System.Drawing.Size(902, 616);
+            this.Controls.Add(this.educationInstitutionDataGridView);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.educationInstitutionDataGridView);
             this.Name = "EducationForm";
             this.Text = "EducationForm";
             this.Load += new System.EventHandler(this.EducationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource2)).EndInit();
@@ -571,6 +589,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masterClassBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -582,24 +603,12 @@
         private System.Windows.Forms.BindingSource educationInstitutionBindingSource;
         private TechnoparkPracticDataSet1TableAdapters.EducationInstitutionTableAdapter educationInstitutionTableAdapter;
         private TechnoparkPracticDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView educationInstitutionDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox educationalIDTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox contactPersonTextBox;
-        private System.Windows.Forms.TextBox phoneContactTextBox;
         private System.Windows.Forms.TextBox contractTextBox;
         private System.Windows.Forms.TextBox costOfTraineesTextBox;
         private System.Windows.Forms.TextBox contractTimeTextBox;
@@ -616,10 +625,25 @@
         private System.Windows.Forms.BindingSource fKTraineeEducationInstitutionBindingSource;
         private TechnoparkPracticDataSet1TableAdapters.TraineeTableAdapter traineeTableAdapter;
         private System.Windows.Forms.BindingSource typeOfEducationInstitutionBindingSource1;
-        private TechnoparkPracticDataSet technoparkPracticDataSet;
+        private TechnoparkPracticDataSet1 technoparkPracticDataSet;
         private System.Windows.Forms.BindingSource fKTraineeEducationInstitutionBindingSource1;
         private System.Windows.Forms.BindingSource fKEducationInstitutionTypeOfEducationInstitutionBindingSource1;
         private System.Windows.Forms.BindingSource fKTraineeEducationInstitutionBindingSource2;
         private System.Windows.Forms.BindingSource typeOfEducationInstitutionBindingSource2;
+        private System.Windows.Forms.MaskedTextBox phoneContactMaskedTextBox;
+        private System.Windows.Forms.BindingSource masterClassBindingSource;
+        private TechnoparkPracticDataSet1TableAdapters.MasterClassTableAdapter masterClassTableAdapter;
+        private System.Windows.Forms.BindingSource educationInstitutionBindingSource1;
+        private System.Windows.Forms.DataGridView educationInstitutionDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
     }
 }

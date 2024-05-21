@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EducationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,12 @@
     <Compile Include="Forms\TraineeForm.Designer.cs">
       <DependentUpon>TraineeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UkDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UkDay.Designer.cs">
+      <DependentUpon>UkDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelEF\EducationInstitution.cs" />
     <Compile Include="ModelEF\Laboratory.cs" />
     <Compile Include="ModelEF\Lab_MasterClass.cs" />
@@ -89,24 +101,14 @@
     <Compile Include="ModelEF\TypeOfEducationInstitution.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TechnoparkPracticDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TechnoparkPracticDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="TechnoparkPracticDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TechnoparkPracticDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="еуые\EducationInstitution.cs" />
-    <Compile Include="еуые\Laboratory.cs" />
-    <Compile Include="еуые\Lab_MasterClass.cs" />
-    <Compile Include="еуые\MasterClass.cs" />
-    <Compile Include="еуые\Model1.cs" />
-    <Compile Include="еуые\sysdiagrams.cs" />
-    <Compile Include="еуые\Trainee.cs" />
-    <Compile Include="еуые\TypeOfEducationInstitution.cs" />
+    <EmbeddedResource Include="Forms\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EducationForm.resx">
       <DependentUpon>EducationForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +121,9 @@
     <EmbeddedResource Include="Forms\TraineeForm.resx">
       <DependentUpon>TraineeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UkDay.resx">
+      <DependentUpon>UkDay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -127,6 +132,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -138,17 +144,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TechnoparkPracticDataSet.xsc">
-      <DependentUpon>TechnoparkPracticDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TechnoparkPracticDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TechnoparkPracticDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TechnoparkPracticDataSet.xss">
-      <DependentUpon>TechnoparkPracticDataSet.xsd</DependentUpon>
-    </None>
     <None Include="TechnoparkPracticDataSet1.xsc">
       <DependentUpon>TechnoparkPracticDataSet1.xsd</DependentUpon>
     </None>
@@ -166,6 +161,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-up-arrow-7915266.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icou.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

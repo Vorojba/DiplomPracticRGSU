@@ -23,6 +23,12 @@ namespace DiplomPracticRGSU.Forms
         {
             InitializeComponent();
         }
+        private void EducationForm_Load(object sender, EventArgs e)
+        {
+            this.typeOfEducationInstitutionTableAdapter.Fill(this.technoparkPracticDataSet1.TypeOfEducationInstitution);
+            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
+            //typeEducationIDComboBox.DataSource = mf.TypeOfEducationInstitution.ToList();
+        }
 
         private void educationInstitutionBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -32,15 +38,6 @@ namespace DiplomPracticRGSU.Forms
 
         }
 
-        private void EducationForm_Load(object sender, EventArgs e)
-        {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "technoparkPracticDataSet1.Trainee". При необходимости она может быть перемещена или удалена.
-            this.traineeTableAdapter.Fill(this.technoparkPracticDataSet1.Trainee);
-            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
-            typeEducationIDComboBox.DataSource = mf.TypeOfEducationInstitution.ToList();
-        }
-
-      
 
         private void educationInstitutionDataGridView_DoubleClick(object sender, EventArgs e)
         {
@@ -61,7 +58,7 @@ namespace DiplomPracticRGSU.Forms
         {
             mf.EducationInstitution.Remove(education);
             mf.SaveChanges();
-            educationInstitutionBindingSource.DataSource = mf.Laboratory.ToList();
+            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
             MessageBox.Show("Лаборатория удалена");
         }
 
@@ -74,7 +71,7 @@ namespace DiplomPracticRGSU.Forms
             //}
             mf.EducationInstitution.AddOrUpdate(education);
             mf.SaveChanges();
-            educationInstitutionBindingSource.DataSource = mf.Laboratory.ToList();
+            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
             MessageBox.Show("Изменения сохранены");
         }
 
@@ -87,7 +84,7 @@ namespace DiplomPracticRGSU.Forms
             //}
             mf.EducationInstitution.Add(education);
             mf.SaveChanges();
-            educationInstitutionBindingSource.DataSource = mf.Laboratory.ToList();
+            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
             MessageBox.Show("Данные сохранены");
         }
 
