@@ -8,7 +8,7 @@ namespace DiplomPracticRGSU.ModelEF
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Model11")
+            : base("name=Model1")
         {
         }
 
@@ -16,7 +16,6 @@ namespace DiplomPracticRGSU.ModelEF
         public virtual DbSet<Lab_MasterClass> Lab_MasterClass { get; set; }
         public virtual DbSet<Laboratory> Laboratory { get; set; }
         public virtual DbSet<MasterClass> MasterClass { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Trainee> Trainee { get; set; }
         public virtual DbSet<TypeOfEducationInstitution> TypeOfEducationInstitution { get; set; }
 

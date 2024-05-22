@@ -25,16 +25,16 @@ namespace DiplomPracticRGSU.Forms
         }
         private void EducationForm_Load(object sender, EventArgs e)
         {
-            this.typeOfEducationInstitutionTableAdapter.Fill(this.technoparkPracticDataSet1.TypeOfEducationInstitution);
-            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
-            //typeEducationIDComboBox.DataSource = mf.TypeOfEducationInstitution.ToList();
+            educationInstitutionBindingSource.DataSource = mf.EducationInstitution.ToList();
+            typeOfEducationInstitutionBindingSource.DataSource = mf.TypeOfEducationInstitution.ToList();
+        //   type
         }
 
         private void educationInstitutionBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.educationInstitutionBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.technoparkPracticDataSet1);
+            //this.Validate();
+            //this.educationInstitutionBindingSource.EndEdit();
+            //this.tableAdapterManager.UpdateAll(this.technoparkPracticDataSet1);
 
         }
 
@@ -50,15 +50,15 @@ namespace DiplomPracticRGSU.Forms
 
         private void newButtton_Click_1(object sender, EventArgs e)
         {
-            education = new EducationInstitution();
-            educationInstitutionBindingSource.DataSource = education;
+            educationInstitutionBindingSource.AddNew();
+            ((EducationInstitution)educationInstitutionBindingSource.Current).TypeEducationID = (int)comboBox1.SelectedValue;
         }
 
         private void delitButton_Click_1(object sender, EventArgs e)
         {
-            mf.EducationInstitution.Remove(education);
+            mf.EducationInstitution.Remove(
+                (EducationInstitution)educationInstitutionBindingSource.Current);
             mf.SaveChanges();
-            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
             MessageBox.Show("Лаборатория удалена");
         }
 
@@ -69,25 +69,36 @@ namespace DiplomPracticRGSU.Forms
             //    MessageBox.Show("Заполните все поля");
             //    return;
             //}
-            mf.EducationInstitution.AddOrUpdate(education);
-            mf.SaveChanges();
-            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
+
             MessageBox.Show("Изменения сохранены");
         }
 
         private void saveButton_Click_1(object sender, EventArgs e)
         {
-            //if (nameTextBox.Text == "")
-            //{
-            //    MessageBox.Show("Заполните все поля");
-            //    return;
-            //}
-            mf.EducationInstitution.Add(education);
-            mf.SaveChanges();
-            educationInstitutionDataGridView.DataSource = mf.EducationInstitution.ToList();
-            MessageBox.Show("Данные сохранены");
+            if (educationInstitutionBindingSource.Count > mf.EducationInstitution.Count())
+            {
+                ((EducationInstitution)educationInstitutionBindingSource.Current).TypeEducationID = (int)comboBox1.SelectedValue;
+                mf.EducationInstitution.Add(
+                    (EducationInstitution)educationInstitutionBindingSource.Current);
+                mf.SaveChanges();
+                MessageBox.Show("Данные сохранены");
+            }
+            else
+            {
+                mf.SaveChanges();
+                MessageBox.Show("Данные сохранены");
+
+            }
+        }
+        private void educationInstitutionDataGridView_Click(object sender, EventArgs e)
+        {
+            comboBox1.SelectedValue = ((EducationInstitution)educationInstitutionBindingSource.Current).TypeEducationID;
         }
 
-        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ((EducationInstitution)educationInstitutionBindingSource.Current).TypeEducationID = (int)comboBox1.SelectedValue;
+            educationInstitutionBindingSource.ResetBindings(true);
+        }
     }
 }

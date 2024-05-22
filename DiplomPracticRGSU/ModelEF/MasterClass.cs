@@ -15,7 +15,6 @@ namespace DiplomPracticRGSU.ModelEF
             Lab_MasterClass = new HashSet<Lab_MasterClass>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MasterClassID { get; set; }
 
         [Required]

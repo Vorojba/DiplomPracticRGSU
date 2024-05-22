@@ -5,6 +5,7 @@ namespace DiplomPracticRGSU.ModelEF
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Linq;
 
     [Table("EducationInstitution")]
     public partial class EducationInstitution
@@ -13,10 +14,10 @@ namespace DiplomPracticRGSU.ModelEF
         public EducationInstitution()
         {
             Trainee = new HashSet<Trainee>();
+            TypeEducationID = 1;
         }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EducationalID { get; set; }
 
         [Required]

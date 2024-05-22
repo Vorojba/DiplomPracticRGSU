@@ -29,52 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label educationalIDLabel;
+            System.Windows.Forms.Label addressLabel;
+            System.Windows.Forms.Label contactPersonLabel;
+            System.Windows.Forms.Label contractLabel;
+            System.Windows.Forms.Label contractTimeLabel;
+            System.Windows.Forms.Label costOfTraineesLabel;
+            System.Windows.Forms.Label emailLabel;
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label typeEducationIDLabel;
-            System.Windows.Forms.Label addressLabel;
-            System.Windows.Forms.Label emailLabel;
-            System.Windows.Forms.Label contactPersonLabel;
             System.Windows.Forms.Label phoneContactLabel;
-            System.Windows.Forms.Label contractLabel;
-            System.Windows.Forms.Label costOfTraineesLabel;
-            System.Windows.Forms.Label contractTimeLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EducationForm));
-            this.technoparkPracticDataSet1 = new DiplomPracticRGSU.TechnoparkPracticDataSet1();
-            this.educationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.educationInstitutionTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.EducationInstitutionTableAdapter();
-            this.tableAdapterManager = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TableAdapterManager();
-            this.typeOfEducationInstitutionTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TypeOfEducationInstitutionTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.typeOfEducationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.phoneContactMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.typeEducationIDComboBox = new System.Windows.Forms.ComboBox();
-            this.typeOfEducationInstitutionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.educationalIDTextBox = new System.Windows.Forms.TextBox();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.educationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addressTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
             this.contactPersonTextBox = new System.Windows.Forms.TextBox();
             this.contractTextBox = new System.Windows.Forms.TextBox();
-            this.costOfTraineesTextBox = new System.Windows.Forms.TextBox();
             this.contractTimeTextBox = new System.Windows.Forms.TextBox();
-            this.typeOfEducationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.costOfTraineesTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.saveButton = new System.Windows.Forms.Button();
-            this.changeButton = new System.Windows.Forms.Button();
             this.delitButton = new System.Windows.Forms.Button();
             this.newButtton = new System.Windows.Forms.Button();
-            this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKTraineeEducationInstitutionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.traineeTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TraineeTableAdapter();
-            this.fKTraineeEducationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fKTraineeEducationInstitutionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.technoparkPracticDataSet = new DiplomPracticRGSU.TechnoparkPracticDataSet1();
-            this.typeOfEducationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.masterClassBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.masterClassTableAdapter = new DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.MasterClassTableAdapter();
-            this.educationInstitutionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.educationInstitutionDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,284 +67,215 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            educationalIDLabel = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            addressLabel = new System.Windows.Forms.Label();
+            contactPersonLabel = new System.Windows.Forms.Label();
+            contractLabel = new System.Windows.Forms.Label();
+            contractTimeLabel = new System.Windows.Forms.Label();
+            costOfTraineesLabel = new System.Windows.Forms.Label();
+            emailLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             typeEducationIDLabel = new System.Windows.Forms.Label();
-            addressLabel = new System.Windows.Forms.Label();
-            emailLabel = new System.Windows.Forms.Label();
-            contactPersonLabel = new System.Windows.Forms.Label();
             phoneContactLabel = new System.Windows.Forms.Label();
-            contractLabel = new System.Windows.Forms.Label();
-            costOfTraineesLabel = new System.Windows.Forms.Label();
-            contractTimeLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masterClassBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // educationalIDLabel
-            // 
-            educationalIDLabel.AutoSize = true;
-            educationalIDLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            educationalIDLabel.Location = new System.Drawing.Point(270, 17);
-            educationalIDLabel.Name = "educationalIDLabel";
-            educationalIDLabel.Size = new System.Drawing.Size(37, 23);
-            educationalIDLabel.TabIndex = 0;
-            educationalIDLabel.Text = "ID:";
-            // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            nameLabel.Location = new System.Drawing.Point(204, 42);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(103, 23);
-            nameLabel.TabIndex = 2;
-            nameLabel.Text = "Название:";
-            // 
-            // typeEducationIDLabel
-            // 
-            typeEducationIDLabel.AutoSize = true;
-            typeEducationIDLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            typeEducationIDLabel.Location = new System.Drawing.Point(84, 66);
-            typeEducationIDLabel.Name = "typeEducationIDLabel";
-            typeEducationIDLabel.Size = new System.Drawing.Size(223, 23);
-            typeEducationIDLabel.TabIndex = 4;
-            typeEducationIDLabel.Text = "Тип учебного завдения:";
             // 
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            addressLabel.Location = new System.Drawing.Point(238, 95);
+            addressLabel.Location = new System.Drawing.Point(276, 22);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(69, 23);
-            addressLabel.TabIndex = 6;
-            addressLabel.Text = "Адрес:";
-            // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            emailLabel.Location = new System.Drawing.Point(206, 118);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(101, 23);
-            emailLabel.TabIndex = 8;
-            emailLabel.Text = "Эл. почта:";
+            addressLabel.Size = new System.Drawing.Size(48, 13);
+            addressLabel.TabIndex = 0;
+            addressLabel.Text = "Address:";
             // 
             // contactPersonLabel
             // 
             contactPersonLabel.AutoSize = true;
-            contactPersonLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            contactPersonLabel.Location = new System.Drawing.Point(147, 144);
+            contactPersonLabel.Location = new System.Drawing.Point(276, 48);
             contactPersonLabel.Name = "contactPersonLabel";
-            contactPersonLabel.Size = new System.Drawing.Size(160, 23);
-            contactPersonLabel.TabIndex = 10;
-            contactPersonLabel.Text = "Контакное лицо:";
-            // 
-            // phoneContactLabel
-            // 
-            phoneContactLabel.AutoSize = true;
-            phoneContactLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            phoneContactLabel.Location = new System.Drawing.Point(214, 168);
-            phoneContactLabel.Name = "phoneContactLabel";
-            phoneContactLabel.Size = new System.Drawing.Size(93, 23);
-            phoneContactLabel.TabIndex = 12;
-            phoneContactLabel.Text = "Телефон:";
+            contactPersonLabel.Size = new System.Drawing.Size(83, 13);
+            contactPersonLabel.TabIndex = 2;
+            contactPersonLabel.Text = "Contact Person:";
             // 
             // contractLabel
             // 
             contractLabel.AutoSize = true;
-            contractLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            contractLabel.Location = new System.Drawing.Point(218, 190);
+            contractLabel.Location = new System.Drawing.Point(276, 74);
             contractLabel.Name = "contractLabel";
-            contractLabel.Size = new System.Drawing.Size(89, 23);
-            contractLabel.TabIndex = 14;
-            contractLabel.Text = "Договор:";
-            // 
-            // costOfTraineesLabel
-            // 
-            costOfTraineesLabel.AutoSize = true;
-            costOfTraineesLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            costOfTraineesLabel.Location = new System.Drawing.Point(68, 218);
-            costOfTraineesLabel.Name = "costOfTraineesLabel";
-            costOfTraineesLabel.Size = new System.Drawing.Size(239, 23);
-            costOfTraineesLabel.TabIndex = 16;
-            costOfTraineesLabel.Text = "Количество прктикантов:";
+            contractLabel.Size = new System.Drawing.Size(50, 13);
+            contractLabel.TabIndex = 4;
+            contractLabel.Text = "Contract:";
             // 
             // contractTimeLabel
             // 
             contractTimeLabel.AutoSize = true;
-            contractTimeLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            contractTimeLabel.Location = new System.Drawing.Point(152, 247);
+            contractTimeLabel.Location = new System.Drawing.Point(276, 100);
             contractTimeLabel.Name = "contractTimeLabel";
-            contractTimeLabel.Size = new System.Drawing.Size(155, 23);
-            contractTimeLabel.TabIndex = 18;
-            contractTimeLabel.Text = "Дата контракта:";
+            contractTimeLabel.Size = new System.Drawing.Size(76, 13);
+            contractTimeLabel.TabIndex = 6;
+            contractTimeLabel.Text = "Contract Time:";
             // 
-            // technoparkPracticDataSet1
+            // costOfTraineesLabel
             // 
-            this.technoparkPracticDataSet1.DataSetName = "TechnoparkPracticDataSet1";
-            this.technoparkPracticDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            costOfTraineesLabel.AutoSize = true;
+            costOfTraineesLabel.Location = new System.Drawing.Point(276, 126);
+            costOfTraineesLabel.Name = "costOfTraineesLabel";
+            costOfTraineesLabel.Size = new System.Drawing.Size(89, 13);
+            costOfTraineesLabel.TabIndex = 8;
+            costOfTraineesLabel.Text = "Cost Of Trainees:";
             // 
-            // educationInstitutionBindingSource
+            // emailLabel
             // 
-            this.educationInstitutionBindingSource.DataMember = "EducationInstitution";
-            this.educationInstitutionBindingSource.DataSource = this.technoparkPracticDataSet1;
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new System.Drawing.Point(276, 161);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(35, 13);
+            emailLabel.TabIndex = 12;
+            emailLabel.Text = "Email:";
             // 
-            // educationInstitutionTableAdapter
+            // nameLabel
             // 
-            this.educationInstitutionTableAdapter.ClearBeforeFill = true;
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new System.Drawing.Point(276, 187);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(38, 13);
+            nameLabel.TabIndex = 14;
+            nameLabel.Text = "Name:";
             // 
-            // tableAdapterManager
+            // typeEducationIDLabel
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.EducationInstitutionTableAdapter = this.educationInstitutionTableAdapter;
-            this.tableAdapterManager.Lab_MasterClassTableAdapter = null;
-            this.tableAdapterManager.LaboratoryTableAdapter = null;
-            this.tableAdapterManager.MasterClassTableAdapter = null;
-            this.tableAdapterManager.TraineeTableAdapter = null;
-            this.tableAdapterManager.TypeOfEducationInstitutionTableAdapter = this.typeOfEducationInstitutionTableAdapter;
-            this.tableAdapterManager.UpdateOrder = DiplomPracticRGSU.TechnoparkPracticDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            typeEducationIDLabel.AutoSize = true;
+            typeEducationIDLabel.Location = new System.Drawing.Point(276, 239);
+            typeEducationIDLabel.Name = "typeEducationIDLabel";
+            typeEducationIDLabel.Size = new System.Drawing.Size(99, 13);
+            typeEducationIDLabel.TabIndex = 18;
+            typeEducationIDLabel.Text = "Type Education ID:";
             // 
-            // typeOfEducationInstitutionTableAdapter
+            // phoneContactLabel
             // 
-            this.typeOfEducationInstitutionTableAdapter.ClearBeforeFill = true;
+            phoneContactLabel.AutoSize = true;
+            phoneContactLabel.Location = new System.Drawing.Point(276, 214);
+            phoneContactLabel.Name = "phoneContactLabel";
+            phoneContactLabel.Size = new System.Drawing.Size(81, 13);
+            phoneContactLabel.TabIndex = 19;
+            phoneContactLabel.Text = "Phone Contact:";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(phoneContactLabel);
             this.panel1.Controls.Add(this.phoneContactMaskedTextBox);
-            this.panel1.Controls.Add(this.typeEducationIDComboBox);
-            this.panel1.Controls.Add(educationalIDLabel);
-            this.panel1.Controls.Add(this.educationalIDTextBox);
+            this.panel1.Controls.Add(addressLabel);
+            this.panel1.Controls.Add(this.addressTextBox);
+            this.panel1.Controls.Add(contactPersonLabel);
+            this.panel1.Controls.Add(this.contactPersonTextBox);
+            this.panel1.Controls.Add(contractLabel);
+            this.panel1.Controls.Add(this.contractTextBox);
+            this.panel1.Controls.Add(contractTimeLabel);
+            this.panel1.Controls.Add(this.contractTimeTextBox);
+            this.panel1.Controls.Add(costOfTraineesLabel);
+            this.panel1.Controls.Add(this.costOfTraineesTextBox);
+            this.panel1.Controls.Add(emailLabel);
+            this.panel1.Controls.Add(this.emailTextBox);
             this.panel1.Controls.Add(nameLabel);
             this.panel1.Controls.Add(this.nameTextBox);
             this.panel1.Controls.Add(typeEducationIDLabel);
-            this.panel1.Controls.Add(addressLabel);
-            this.panel1.Controls.Add(this.addressTextBox);
-            this.panel1.Controls.Add(emailLabel);
-            this.panel1.Controls.Add(this.emailTextBox);
-            this.panel1.Controls.Add(contactPersonLabel);
-            this.panel1.Controls.Add(this.contactPersonTextBox);
-            this.panel1.Controls.Add(phoneContactLabel);
-            this.panel1.Controls.Add(contractLabel);
-            this.panel1.Controls.Add(this.contractTextBox);
-            this.panel1.Controls.Add(costOfTraineesLabel);
-            this.panel1.Controls.Add(this.costOfTraineesTextBox);
-            this.panel1.Controls.Add(contractTimeLabel);
-            this.panel1.Controls.Add(this.contractTimeTextBox);
             this.panel1.Location = new System.Drawing.Point(26, 309);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(583, 287);
+            this.panel1.Size = new System.Drawing.Size(609, 294);
             this.panel1.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.typeOfEducationInstitutionBindingSource;
+            this.comboBox1.DisplayMember = "NameOfType";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(382, 237);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 21;
+            this.comboBox1.ValueMember = "TypeEducationID";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // typeOfEducationInstitutionBindingSource
+            // 
+            this.typeOfEducationInstitutionBindingSource.DataSource = typeof(DiplomPracticRGSU.ModelEF.TypeOfEducationInstitution);
             // 
             // phoneContactMaskedTextBox
             // 
             this.phoneContactMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "PhoneContact", true));
-            this.phoneContactMaskedTextBox.Location = new System.Drawing.Point(308, 171);
-            this.phoneContactMaskedTextBox.Mask = "+7(000)000-0000";
+            this.phoneContactMaskedTextBox.Location = new System.Drawing.Point(381, 210);
+            this.phoneContactMaskedTextBox.Mask = "8(000) 000-00-00";
             this.phoneContactMaskedTextBox.Name = "phoneContactMaskedTextBox";
-            this.phoneContactMaskedTextBox.Size = new System.Drawing.Size(196, 20);
-            this.phoneContactMaskedTextBox.TabIndex = 21;
+            this.phoneContactMaskedTextBox.Size = new System.Drawing.Size(121, 20);
+            this.phoneContactMaskedTextBox.TabIndex = 20;
             // 
-            // typeEducationIDComboBox
+            // educationInstitutionBindingSource
             // 
-            this.typeEducationIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "TypeEducationID", true));
-            this.typeEducationIDComboBox.DataSource = this.typeOfEducationInstitutionBindingSource2;
-            this.typeEducationIDComboBox.DisplayMember = "NameOfType";
-            this.typeEducationIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.typeEducationIDComboBox.Location = new System.Drawing.Point(308, 68);
-            this.typeEducationIDComboBox.Name = "typeEducationIDComboBox";
-            this.typeEducationIDComboBox.Size = new System.Drawing.Size(196, 21);
-            this.typeEducationIDComboBox.TabIndex = 20;
-            this.typeEducationIDComboBox.ValueMember = "TypeEducationID";
-            // 
-            // typeOfEducationInstitutionBindingSource2
-            // 
-            this.typeOfEducationInstitutionBindingSource2.DataMember = "TypeOfEducationInstitution";
-            this.typeOfEducationInstitutionBindingSource2.DataSource = this.technoparkPracticDataSet1;
-            // 
-            // educationalIDTextBox
-            // 
-            this.educationalIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "EducationalID", true));
-            this.educationalIDTextBox.Location = new System.Drawing.Point(308, 17);
-            this.educationalIDTextBox.Name = "educationalIDTextBox";
-            this.educationalIDTextBox.Size = new System.Drawing.Size(196, 20);
-            this.educationalIDTextBox.TabIndex = 1;
-            // 
-            // nameTextBox
-            // 
-            this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(308, 43);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(196, 20);
-            this.nameTextBox.TabIndex = 3;
+            this.educationInstitutionBindingSource.DataSource = typeof(DiplomPracticRGSU.ModelEF.EducationInstitution);
             // 
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(308, 95);
+            this.addressTextBox.Location = new System.Drawing.Point(381, 19);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(196, 20);
-            this.addressTextBox.TabIndex = 7;
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(308, 121);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(196, 20);
-            this.emailTextBox.TabIndex = 9;
+            this.addressTextBox.Size = new System.Drawing.Size(121, 20);
+            this.addressTextBox.TabIndex = 1;
             // 
             // contactPersonTextBox
             // 
             this.contactPersonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "ContactPerson", true));
-            this.contactPersonTextBox.Location = new System.Drawing.Point(308, 147);
+            this.contactPersonTextBox.Location = new System.Drawing.Point(381, 45);
             this.contactPersonTextBox.Name = "contactPersonTextBox";
-            this.contactPersonTextBox.Size = new System.Drawing.Size(196, 20);
-            this.contactPersonTextBox.TabIndex = 11;
+            this.contactPersonTextBox.Size = new System.Drawing.Size(121, 20);
+            this.contactPersonTextBox.TabIndex = 3;
             // 
             // contractTextBox
             // 
             this.contractTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "Contract", true));
-            this.contractTextBox.Location = new System.Drawing.Point(308, 195);
+            this.contractTextBox.Location = new System.Drawing.Point(381, 71);
             this.contractTextBox.Name = "contractTextBox";
-            this.contractTextBox.Size = new System.Drawing.Size(196, 20);
-            this.contractTextBox.TabIndex = 15;
-            // 
-            // costOfTraineesTextBox
-            // 
-            this.costOfTraineesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "CostOfTrainees", true));
-            this.costOfTraineesTextBox.Location = new System.Drawing.Point(308, 221);
-            this.costOfTraineesTextBox.Name = "costOfTraineesTextBox";
-            this.costOfTraineesTextBox.Size = new System.Drawing.Size(196, 20);
-            this.costOfTraineesTextBox.TabIndex = 17;
+            this.contractTextBox.Size = new System.Drawing.Size(121, 20);
+            this.contractTextBox.TabIndex = 5;
             // 
             // contractTimeTextBox
             // 
             this.contractTimeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "ContractTime", true));
-            this.contractTimeTextBox.Location = new System.Drawing.Point(308, 252);
+            this.contractTimeTextBox.Location = new System.Drawing.Point(381, 97);
             this.contractTimeTextBox.Name = "contractTimeTextBox";
-            this.contractTimeTextBox.Size = new System.Drawing.Size(196, 20);
-            this.contractTimeTextBox.TabIndex = 19;
+            this.contractTimeTextBox.Size = new System.Drawing.Size(121, 20);
+            this.contractTimeTextBox.TabIndex = 7;
             // 
-            // typeOfEducationInstitutionBindingSource
+            // costOfTraineesTextBox
             // 
-            this.typeOfEducationInstitutionBindingSource.DataMember = "TypeOfEducationInstitution";
-            this.typeOfEducationInstitutionBindingSource.DataSource = this.technoparkPracticDataSet1;
+            this.costOfTraineesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "CostOfTrainees", true));
+            this.costOfTraineesTextBox.Location = new System.Drawing.Point(381, 123);
+            this.costOfTraineesTextBox.Name = "costOfTraineesTextBox";
+            this.costOfTraineesTextBox.Size = new System.Drawing.Size(121, 20);
+            this.costOfTraineesTextBox.TabIndex = 9;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "Email", true));
+            this.emailTextBox.Location = new System.Drawing.Point(381, 158);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(121, 20);
+            this.emailTextBox.TabIndex = 13;
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.educationInstitutionBindingSource, "Name", true));
+            this.nameTextBox.Location = new System.Drawing.Point(381, 184);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(121, 20);
+            this.nameTextBox.TabIndex = 15;
             // 
             // label6
             // 
@@ -378,37 +290,24 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.saveButton);
-            this.panel2.Controls.Add(this.changeButton);
             this.panel2.Controls.Add(this.delitButton);
             this.panel2.Controls.Add(this.newButtton);
             this.panel2.Location = new System.Drawing.Point(661, 354);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 199);
+            this.panel2.Size = new System.Drawing.Size(200, 155);
             this.panel2.TabIndex = 4;
             // 
             // saveButton
             // 
             this.saveButton.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.saveButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.saveButton.Location = new System.Drawing.Point(22, 149);
+            this.saveButton.Location = new System.Drawing.Point(22, 102);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(162, 41);
             this.saveButton.TabIndex = 6;
             this.saveButton.Text = "Сохранить";
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click_1);
-            // 
-            // changeButton
-            // 
-            this.changeButton.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.changeButton.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.changeButton.Location = new System.Drawing.Point(22, 102);
-            this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(162, 41);
-            this.changeButton.TabIndex = 5;
-            this.changeButton.Text = "Изменить";
-            this.changeButton.UseVisualStyleBackColor = false;
-            this.changeButton.Click += new System.EventHandler(this.changeButton_Click_1);
             // 
             // delitButton
             // 
@@ -434,59 +333,6 @@
             this.newButtton.UseVisualStyleBackColor = false;
             this.newButtton.Click += new System.EventHandler(this.newButtton_Click_1);
             // 
-            // fKEducationInstitutionTypeOfEducationInstitutionBindingSource
-            // 
-            this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource.DataMember = "FK_EducationInstitution_TypeOfEducationInstitution";
-            this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource.DataSource = this.typeOfEducationInstitutionBindingSource;
-            // 
-            // fKTraineeEducationInstitutionBindingSource
-            // 
-            this.fKTraineeEducationInstitutionBindingSource.DataMember = "FK_Trainee_EducationInstitution";
-            this.fKTraineeEducationInstitutionBindingSource.DataSource = this.educationInstitutionBindingSource;
-            // 
-            // traineeTableAdapter
-            // 
-            this.traineeTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKTraineeEducationInstitutionBindingSource1
-            // 
-            this.fKTraineeEducationInstitutionBindingSource1.DataMember = "FK_Trainee_EducationInstitution";
-            this.fKTraineeEducationInstitutionBindingSource1.DataSource = this.educationInstitutionBindingSource;
-            // 
-            // fKEducationInstitutionTypeOfEducationInstitutionBindingSource1
-            // 
-            this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource1.DataMember = "FK_EducationInstitution_TypeOfEducationInstitution";
-            this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource1.DataSource = this.typeOfEducationInstitutionBindingSource;
-            // 
-            // fKTraineeEducationInstitutionBindingSource2
-            // 
-            this.fKTraineeEducationInstitutionBindingSource2.DataMember = "FK_Trainee_EducationInstitution";
-            this.fKTraineeEducationInstitutionBindingSource2.DataSource = this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource;
-            // 
-            // technoparkPracticDataSet
-            // 
-            this.technoparkPracticDataSet.DataSetName = "TechnoparkPracticDataSet";
-            this.technoparkPracticDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // typeOfEducationInstitutionBindingSource1
-            // 
-            this.typeOfEducationInstitutionBindingSource1.DataMember = "TypeOfEducationInstitution";
-            this.typeOfEducationInstitutionBindingSource1.DataSource = this.technoparkPracticDataSet;
-            // 
-            // masterClassBindingSource
-            // 
-            this.masterClassBindingSource.DataMember = "MasterClass";
-            this.masterClassBindingSource.DataSource = this.technoparkPracticDataSet1;
-            // 
-            // masterClassTableAdapter
-            // 
-            this.masterClassTableAdapter.ClearBeforeFill = true;
-            // 
-            // educationInstitutionBindingSource1
-            // 
-            this.educationInstitutionBindingSource1.DataMember = "EducationInstitution";
-            this.educationInstitutionBindingSource1.DataSource = this.technoparkPracticDataSet1;
-            // 
             // educationInstitutionDataGridView
             // 
             this.educationInstitutionDataGridView.AutoGenerateColumns = false;
@@ -501,12 +347,15 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
             this.educationInstitutionDataGridView.DataSource = this.educationInstitutionBindingSource;
-            this.educationInstitutionDataGridView.Location = new System.Drawing.Point(20, 12);
+            this.educationInstitutionDataGridView.Location = new System.Drawing.Point(12, 12);
             this.educationInstitutionDataGridView.Name = "educationInstitutionDataGridView";
-            this.educationInstitutionDataGridView.Size = new System.Drawing.Size(870, 291);
-            this.educationInstitutionDataGridView.TabIndex = 5;
+            this.educationInstitutionDataGridView.Size = new System.Drawing.Size(878, 291);
+            this.educationInstitutionDataGridView.TabIndex = 6;
+            this.educationInstitutionDataGridView.Click += new System.EventHandler(this.educationInstitutionDataGridView_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -568,6 +417,18 @@
             this.dataGridViewTextBoxColumn10.HeaderText = "ContractTime";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "TypeOfEducationInstitution";
+            this.dataGridViewTextBoxColumn11.HeaderText = "TypeOfEducationInstitution";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Trainee";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Trainee";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
             // EducationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -581,22 +442,11 @@
             this.Name = "EducationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.EducationForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKEducationInstitutionTypeOfEducationInstitutionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKTraineeEducationInstitutionBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technoparkPracticDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typeOfEducationInstitutionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masterClassBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationInstitutionDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -604,42 +454,22 @@
         }
 
         #endregion
-
-        private TechnoparkPracticDataSet1 technoparkPracticDataSet1;
-        private System.Windows.Forms.BindingSource educationInstitutionBindingSource;
-        private TechnoparkPracticDataSet1TableAdapters.EducationInstitutionTableAdapter educationInstitutionTableAdapter;
-        private TechnoparkPracticDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox educationalIDTextBox;
-        private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.TextBox addressTextBox;
-        private System.Windows.Forms.TextBox emailTextBox;
-        private System.Windows.Forms.TextBox contactPersonTextBox;
-        private System.Windows.Forms.TextBox contractTextBox;
-        private System.Windows.Forms.TextBox costOfTraineesTextBox;
-        private System.Windows.Forms.TextBox contractTimeTextBox;
-        private TechnoparkPracticDataSet1TableAdapters.TypeOfEducationInstitutionTableAdapter typeOfEducationInstitutionTableAdapter;
-        private System.Windows.Forms.ComboBox typeEducationIDComboBox;
-        private System.Windows.Forms.BindingSource typeOfEducationInstitutionBindingSource;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.Button changeButton;
         private System.Windows.Forms.Button delitButton;
         private System.Windows.Forms.Button newButtton;
-        private System.Windows.Forms.BindingSource fKEducationInstitutionTypeOfEducationInstitutionBindingSource;
-        private System.Windows.Forms.BindingSource fKTraineeEducationInstitutionBindingSource;
-        private TechnoparkPracticDataSet1TableAdapters.TraineeTableAdapter traineeTableAdapter;
-        private System.Windows.Forms.BindingSource typeOfEducationInstitutionBindingSource1;
-        private TechnoparkPracticDataSet1 technoparkPracticDataSet;
-        private System.Windows.Forms.BindingSource fKTraineeEducationInstitutionBindingSource1;
-        private System.Windows.Forms.BindingSource fKEducationInstitutionTypeOfEducationInstitutionBindingSource1;
-        private System.Windows.Forms.BindingSource fKTraineeEducationInstitutionBindingSource2;
-        private System.Windows.Forms.BindingSource typeOfEducationInstitutionBindingSource2;
         private System.Windows.Forms.MaskedTextBox phoneContactMaskedTextBox;
-        private System.Windows.Forms.BindingSource masterClassBindingSource;
-        private TechnoparkPracticDataSet1TableAdapters.MasterClassTableAdapter masterClassTableAdapter;
-        private System.Windows.Forms.BindingSource educationInstitutionBindingSource1;
+        private System.Windows.Forms.BindingSource educationInstitutionBindingSource;
+        private System.Windows.Forms.TextBox addressTextBox;
+        private System.Windows.Forms.TextBox contactPersonTextBox;
+        private System.Windows.Forms.TextBox contractTextBox;
+        private System.Windows.Forms.TextBox contractTimeTextBox;
+        private System.Windows.Forms.TextBox costOfTraineesTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.BindingSource typeOfEducationInstitutionBindingSource;
         private System.Windows.Forms.DataGridView educationInstitutionDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -651,5 +481,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

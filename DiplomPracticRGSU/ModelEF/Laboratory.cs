@@ -17,7 +17,6 @@ namespace DiplomPracticRGSU.ModelEF
         }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LabID { get; set; }
 
         [Required]

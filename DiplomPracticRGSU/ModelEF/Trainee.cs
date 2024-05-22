@@ -9,7 +9,6 @@ namespace DiplomPracticRGSU.ModelEF
     [Table("Trainee")]
     public partial class Trainee
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TraineeID { get; set; }
 
         [Required]

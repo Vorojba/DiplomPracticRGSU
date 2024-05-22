@@ -96,7 +96,6 @@
     <Compile Include="ModelEF\Lab_MasterClass.cs" />
     <Compile Include="ModelEF\MasterClass.cs" />
     <Compile Include="ModelEF\Model1.cs" />
-    <Compile Include="ModelEF\sysdiagrams.cs" />
     <Compile Include="ModelEF\Trainee.cs" />
     <Compile Include="ModelEF\TypeOfEducationInstitution.cs" />
     <Compile Include="Program.cs" />
@@ -135,6 +134,13 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DiplomPracticRGSU.ModelEF.EducationInstitution.datasource" />
+    <None Include="Properties\DataSources\DiplomPracticRGSU.ModelEF.Laboratory.datasource" />
+    <None Include="Properties\DataSources\DiplomPracticRGSU.ModelEF.Lab_MasterClass.datasource" />
+    <None Include="Properties\DataSources\DiplomPracticRGSU.ModelEF.MasterClass.datasource" />
+    <None Include="Properties\DataSources\DiplomPracticRGSU.ModelEF.Model1.datasource" />
+    <None Include="Properties\DataSources\DiplomPracticRGSU.ModelEF.Trainee.datasource" />
+    <None Include="Properties\DataSources\DiplomPracticRGSU.ModelEF.TypeOfEducationInstitution.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
